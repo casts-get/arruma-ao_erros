@@ -1,8 +1,8 @@
 <?php
 
-$sql = "SELECT id, nome, email FROM usuarios ORDER BY id DESC";
-$resultado = $conn->query($sql)
-
+include "infra/conexao.php";
+$sql = "SELECT * FROM usuarios";
+$resultado = mysqli_query($conexao, $sql);
 ?>
 
 <!DOCTYPE html>
